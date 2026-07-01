@@ -17,7 +17,7 @@ bash remove.sh
 
 **Restore everything**
 ```bat
-bash remove.sh
+bash restore.sh
 ```
 
 > Uses `pm uninstall -k --user 0` — packages are disabled, not deleted. Safe to restore anytime.
