@@ -1,2 +1,23 @@
-# cph1083-debloat
-ADB debloat script for OPPO A3s (CPH1803) — removes ~83 bloatware packages (NearMe, OPPO/ColorOS junk, Qualcomm test tools, Google extras) without breaking core features. Includes restore script. No root required.
+# CPH1803 Debloat
+
+ADB debloat scripts for **OPPO A3s (CPH1803)** running ColorOS. No root required.
+
+## Requirements
+
+- ADB installed and in PATH
+- USB Debugging enabled on device
+- Device connected via USB
+
+## Usage
+
+**Linux / macOS**
+```bash
+bash remove.sh
+```
+
+**Restore everything**
+```bat
+bash remove.sh    # Linux / macOS
+```
+
+> Uses `pm uninstall -k --user 0` — packages are disabled, not deleted. Safe to restore anytime.
